@@ -1,0 +1,394 @@
+/***MAIN STRUCTURE*********************************************************/
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.work {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/*** BANNER ***************************************/
+
+#banner a {
+  color: yellow;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  font-family: sans-serif;
+  font-size: .85em;
+  letter-spacing: .15em;
+}
+
+#banner a:hover,
+#banner a:focus {
+  color: white;
+}
+
+#aboutBtn {
+  font-family: sans-serif;
+  border-bottom: 2pt solid white;
+  font-size: .85em;
+  letter-spacing: .15em;
+  cursor: pointer;
+  color: yellow;
+}
+
+#aboutBtn:hover,
+#aboutBtn:focus {
+  color: white;
+}
+
+/*** ABOUT ME MODAL *************************************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modalContent {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 3%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modalContent p {
+  color: white;
+  font-family: sans-serif;
+  margin-top: 50px%;
+  font-size: .85em;
+  letter-spacing: .1em;
+  line-height: 1.5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+}
+
+.modalContent a {
+  color: white;
+  text-decoration: none;
+  margin: 10%;
+  font-family: sans-serif;
+  border-bottom: 2px solid yellow;
+  font-size: .85em;
+  letter-spacing: .1em;
+}
+
+.modalContent a:hover,
+.modalContent a:focus {
+  color: yellow;
+}
+
+#aboutModalText {
+  margin-bottom: 10%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: yellow;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*** TYPEOGRAPHY****************************************/
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgb(30,30,35);
+  letter-spacing: .125em;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+h4{
+  font-family: sans-serif;
+  font-size: 1em;
+  margin-top: .3em;
+  margin-bottom: 0;
+  color: lightgray;
+  letter-spacing: .15em;
+}
+
+p {
+  font-family: sans-serif;
+  color: rgb(260,260,260);
+  line-height: 1.75em;
+  font-size: .75em;
+  letter-spacing: .03em;
+}
+
+/*** WORK ****************************************/
+
+.work img {
+  width: 100%;
+  border: 2px solid rgb(240,240,240);
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.work {
+  border-bottom: 3px solid yellow;
+}
+
+/***RETURN TO TOP*****************************************************/
+
+footer {
+  margin: 5% 0 5%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer a {
+  font-family: sans-serif;
+  font-size: .85em;
+  letter-spacing: .1em;
+  color: grey;
+  text-decoration: none;
+  border-bottom: 2px solid yellow;
+}
+
+
+/***  PHONE  *****************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+@media only screen and (max-width: 480px) {
+
+  #banner {
+    background: rgb(30,30,35);
+    box-shadow:0px 2px 4px rgba(0,0,0,0.1);
+    width:100%;
+    height: 85px;
+    position:fixed;
+    margin-top: 0;
+    padding: 3%;
+  }
+
+  #mainWrapper {
+    padding-top: 90px;
+    background-color: white;
+  }
+
+  /***BANNER********/
+
+
+  #banner ul {
+    padding: 0;
+  }
+
+  #banner li {
+    display: inline;
+    margin-right: 5%;
+  }
+
+  #banner p {
+    margin-top: 35%;
+  }
+
+  #aboutContent {
+    display: none;
+  }
+
+
+  /****/
+
+  h1{
+    font-family: sans-serif;
+    color: rgb(260,260,260);
+    letter-spacing: .21em;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: .25em;
+  }
+
+  h2{
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    color: yellow;
+    letter-spacing: .15em;
+  }
+
+}
+
+
+/***  TABLET  ****************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+@media only screen and (min-width:481px) and (max-width:800px) {
+
+  #banner {
+    background: rgb(30,30,35);
+    box-shadow:0px 2px 4px rgba(0,0,0,0.1);
+    width:100%;
+    height: 85px;
+    position:fixed;
+    margin-top: 0;
+    padding: 3%;
+  }
+
+  #mainWrapper {
+    padding-top: 105px;
+    background-color: white;
+  }
+
+
+  /***BANNER********/
+
+  #banner ul {
+    padding: 0;
+    margin-top: .1%;
+  }
+
+  #banner li {
+    display: inline;
+    margin-right: 5%;
+  }
+
+  #banner p {
+    margin-top: 35%;
+  }
+
+  #aboutContent {
+    display: none;
+  }
+
+
+  /****/
+
+  h1{
+    font-family: sans-serif;
+    color: rgb(260,260,260);
+    letter-spacing: .21em;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: .25em;
+  }
+
+  h2{
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-top: .5em;
+    color: yellow;
+    letter-spacing: .15em;
+    margin bottom: 1%;
+
+  }
+
+}
+
+/***  COMPUTER  **************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+@media only screen and (min-width:801px) {
+
+  #banner {
+    float: left;
+    width: 275px;
+    position: absolute;
+    height: 100%;
+    position:fixed;
+    background-color: rgb(30,30,35);
+    box-shadow:4px 2px 4px rgba(0,0,0,0.2);
+  }
+
+  #mainWrapper {
+    padding-left: 275px;
+    padding-top: 15px;
+    background-color: white;
+  }
+
+
+    /***BANNER********/
+
+    #banner header {
+      padding: 7% 15% 7% 7%;
+    }
+
+    #banner ul {
+      padding: 0;
+    }
+
+    #banner li {
+      display: inline;
+      margin-right: 10%;
+    }
+
+    #banner p {
+      margin-top: 35%;
+    }
+
+    #aboutBtn {
+      display: none;
+    }
+
+
+    /*****/
+
+    h1{
+      font-family: sans-serif;
+      color: rgb(260,260,260);
+      letter-spacing: .21em;
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-top: 0;
+      margin-bottom: .25em;
+    }
+
+    h2{
+      font-family: sans-serif;
+      font-size: 1em;
+      margin-top: .5em;
+      color: yellow;
+      letter-spacing: .15em;
+    }
+
+}
